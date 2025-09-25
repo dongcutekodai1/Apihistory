@@ -19,11 +19,11 @@ lock_101 = threading.Lock()
 
 latest_result_100 = {
     "Phien": 0, "Xuc_xac_1": 0, "Xuc_xac_2": 0, "Xuc_xac_3": 0,
-    "Tong": 0, "Ket_qua": "Chưa có", "id": "huylamtool"
+    "Tong": 0, "Ket_qua": "Chưa có", "id": "truongdong1920"
 }
 latest_result_101 = {
     "Phien": 0, "Xuc_xac_1": 0, "Xuc_xac_2": 0, "Xuc_xac_3": 0,
-    "Tong": 0, "Ket_qua": "Chưa có", "id": "huylamtool"
+    "Tong": 0, "Ket_qua": "Chưa có", "id": "truongdong1920"
 }
 
 history_100 = []
@@ -74,7 +74,7 @@ def poll_api(gid, lock, result_store, history, is_md5):
                                 "Xuc_xac_3": d3,
                                 "Tong": total,
                                 "Ket_qua": ket_qua,
-                                "id": "huylamtool"
+                                "id": "truongdong1920"
                             }
                             update_result(result_store, history, lock, result)
                             logger.info(f"[MD5] Phiên {sid} - Tổng: {total}, Kết quả: {ket_qua}")
@@ -92,7 +92,7 @@ def poll_api(gid, lock, result_store, history, is_md5):
                                 "Xuc_xac_3": d3,
                                 "Tong": total,
                                 "Ket_qua": ket_qua,
-                                "id": "huylamtool"
+                                "id": "truongdong1920"
                             }
                             update_result(result_store, history, lock, result)
                             logger.info(f"[TX] Phiên {sid} - Tổng: {total}, Kết quả: {ket_qua}")
@@ -135,3 +135,4 @@ if __name__ == "__main__":
     logger.info("Đã bắt đầu polling dữ liệu.")
     port = int(os.environ.get("PORT", 8000))
     app.run(host=HOST, port=port)
+
