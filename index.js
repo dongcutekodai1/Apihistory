@@ -3,7 +3,7 @@ const express = require('express');
 
 const app = express();
 const PORT = 3000;
-const API_URL = 'https://hitclub-historyprohdx.onrender.com/api/md5';
+const API_URL = 'https://api-hitclub.onrender.com/api/md5';
 
 let dataList = [];
 let lastPhien = null;
